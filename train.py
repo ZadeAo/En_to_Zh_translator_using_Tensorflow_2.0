@@ -10,13 +10,11 @@ import jieba
 import pickle
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 
+
 from tensorflow import keras
 from tensorflow.keras import layers
 from sklearn.model_selection import train_test_split
 from config import *
-
-# from tensorflow.compat.v1 import ConfigProto
-# from tensorflow.compat.v1 import InteractiveSession
 
 
 class Encoder(tf.keras.Model):
@@ -269,8 +267,4 @@ def train():
 
 
 if __name__ == '__main__':
-    # config = ConfigProto()
-    # config.gpu_options.allow_growth = True
-    # session = InteractiveSession(config=config)
-    
     train()
