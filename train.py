@@ -15,6 +15,9 @@ from tensorflow.keras import layers
 from sklearn.model_selection import train_test_split
 from config import *
 
+# from tensorflow.compat.v1 import ConfigProto
+# from tensorflow.compat.v1 import InteractiveSession
+
 
 class Encoder(tf.keras.Model):
     def __init__(self, vocab_size, embedding_dim, enc_units, batch_sz):
@@ -266,4 +269,8 @@ def train():
 
 
 if __name__ == '__main__':
+    # config = ConfigProto()
+    # config.gpu_options.allow_growth = True
+    # session = InteractiveSession(config=config)
+    
     train()
