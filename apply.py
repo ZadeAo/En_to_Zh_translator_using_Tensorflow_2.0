@@ -2,7 +2,7 @@ import tensorflow as tf
 import pickle
 import os
 from tensorflow import keras
-from config import EMBEDDING_DIM, MODEL_PATH, UNITS, BATCH_SIZE
+from config import MODEL_PATH, BATCH_SIZE, EMBEDDING_DIM, UNITS
 from train import preprocess_english, Encoder, Decoder
 
 

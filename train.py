@@ -14,7 +14,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 from tensorflow import keras
 from tensorflow.keras import layers
 from sklearn.model_selection import train_test_split
-from config import *
+from config import MODEL_PATH, NUM_EXAMPLES, BATCH_SIZE, EMBEDDING_DIM, UNITS, EPOCHS
 
 
 class Encoder(tf.keras.Model):

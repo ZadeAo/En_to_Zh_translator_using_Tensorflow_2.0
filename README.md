@@ -12,7 +12,7 @@ https://www.statmt.org/wmt18/translation-task.html
 
 https://www.statmt.org/wmt19/translation-task.html
 
-下载并整理后的数据集在 https://yun.yusanshi.com/TF_datasets/en_zh.zip（约33w条）。
+下载并整理后的数据集在 https://yun.yusanshi.com/TF_datasets/en_zh.zip （约33w条）。
 
 ## 运行
 
