@@ -22,6 +22,8 @@ https://www.statmt.org/wmt19/translation-task.html
 
 ## 示例
 
+> 本人的电脑比较辣鸡（GTX 1050Ti），显存 4 G，数据量稍大就爆显存（OOM），下面的测试是把`NUM_EXAMPLES`调到 20000 的结果，如果把 33w 的测试数据全部用上，翻译效果应该会好得多。
+
 ```
 Load model from saved_model successfully.
 {'At the time, There were no native English speakers teaching in any public school.': "KeyError('speakers')",
