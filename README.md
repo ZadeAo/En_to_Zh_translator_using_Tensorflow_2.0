@@ -51,3 +51,59 @@ Load model from saved_model successfully.
  'You are wonderful.': '你很无聊。'}
 ```
 
+
+## Tips
+### 阿里云 GPU 服务器的配置
+#### Install docker
+Visit https://docs.docker.com/install/linux/docker-ce/ubuntu/
+
+#### Install driver for gpu
+```bash
+add-apt-repository ppa:graphics-drivers/ppa
+apt update
+ubuntu-drivers devices
+ubuntu-drivers autoinstall
+```
+
+##### Run docker
+```bash
+docker run -it --rm -v ~/docker_file:/docker_file --gpus all tensorflow/tensorflow:2.0.0b1-gpu-py3 bash
+```
+
+```
+apt install vim -y
+pip install jieba sklearn -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+### 使用`screen`恢复 session
+
+#### Create a session
+
+```
+screen
+```
+
+#### Do something
+```
+For example, start training
+```
+
+#### Return to normal SSH terminal
+
+Ctrl + a + d
+
+#### Reconnect the session
+
+```
+screen -ls
+```
+
+```
+screen -r session_name
+```
+
+#### Exit the session
+```
+exit
+```
+
